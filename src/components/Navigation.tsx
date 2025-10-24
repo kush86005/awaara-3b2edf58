@@ -31,12 +31,18 @@ const Navigation = ({ onJoinClick }: NavigationProps) => {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <button 
-          onClick={() => scrollToSection("hero")}
-          className="text-2xl font-bold gradient-text hover:opacity-80 transition-opacity"
-        >
-          Awaara
-        </button>
+        {/* Logo */}
+        <div className="flex items-center gap-3">
+          <button 
+            onClick={() => scrollToSection("hero")}
+            className="text-2xl font-bold gradient-text hover:opacity-80 transition-opacity"
+          >
+            Awaara
+          </button>
+          <span className="px-3 py-1 bg-secondary/50 rounded-full text-xs font-bold text-[hsl(var(--gradient-start))] border border-[hsl(var(--gradient-start))]/30 animate-pulse hidden sm:inline-block">
+            COMING SOON
+          </span>
+        </div>
 
         <div className="hidden md:flex items-center gap-8">
           <button

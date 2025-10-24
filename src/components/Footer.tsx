@@ -4,43 +4,48 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border/50 bg-background">
-      <div className="container mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
+    <footer className="border-t border-border/50 bg-gradient-to-b from-background to-secondary/20 relative overflow-hidden">
+      {/* Animated background */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -bottom-32 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[hsl(var(--gradient-start))]/5 rounded-full blur-3xl animate-pulse-slow"></div>
+      </div>
+      
+      <div className="container mx-auto px-6 py-16 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 animate-fade-in-up">
           {/* Column 1: Brand */}
-          <div>
-            <h3 className="text-2xl font-bold gradient-text mb-4">Awaara</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              Building the future of social experiences in India.
+          <div className="space-y-4">
+            <h3 className="text-3xl font-bold gradient-text animate-gradient">Awaara</h3>
+            <p className="text-muted-foreground leading-relaxed text-lg">
+              Building the future of social experiences in <span className="text-foreground font-semibold">India</span>.
             </p>
           </div>
 
           {/* Column 2: Links */}
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
-            <ul className="space-y-2">
+            <h4 className="font-bold text-lg mb-6 text-foreground">Company</h4>
+            <ul className="space-y-3">
               <li>
-                <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a href="#about" className="text-muted-foreground hover:text-[hsl(var(--gradient-start))] transition-colors hover:translate-x-1 inline-block transform duration-300">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a href="#contact" className="text-muted-foreground hover:text-[hsl(var(--gradient-start))] transition-colors hover:translate-x-1 inline-block transform duration-300">
                   Contact
                 </a>
               </li>
               <li>
-                <a href="#careers" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a href="#careers" className="text-muted-foreground hover:text-[hsl(var(--gradient-start))] transition-colors hover:translate-x-1 inline-block transform duration-300">
                   Careers
                 </a>
               </li>
               <li>
-                <a href="#privacy" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a href="#privacy" className="text-muted-foreground hover:text-[hsl(var(--gradient-start))] transition-colors hover:translate-x-1 inline-block transform duration-300">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#terms" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a href="#terms" className="text-muted-foreground hover:text-[hsl(var(--gradient-start))] transition-colors hover:translate-x-1 inline-block transform duration-300">
                   Terms of Service
                 </a>
               </li>
@@ -49,13 +54,13 @@ const Footer = () => {
 
           {/* Column 3: Social */}
           <div>
-            <h4 className="font-semibold mb-4">Connect</h4>
+            <h4 className="font-bold text-lg mb-6 text-foreground">Connect</h4>
             <div className="flex gap-4">
               <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-secondary hover:bg-[hsl(var(--gradient-start))] flex items-center justify-center transition-all hover:scale-110"
+                className="w-12 h-12 rounded-full bg-secondary/50 hover:bg-gradient-to-r hover:from-[hsl(var(--gradient-start))] hover:to-[hsl(var(--gradient-end))] flex items-center justify-center transition-all hover:scale-110 hover:-rotate-6 duration-300 border border-border/50"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
@@ -64,7 +69,7 @@ const Footer = () => {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-secondary hover:bg-[hsl(var(--gradient-start))] flex items-center justify-center transition-all hover:scale-110"
+                className="w-12 h-12 rounded-full bg-secondary/50 hover:bg-gradient-to-r hover:from-[hsl(var(--gradient-start))] hover:to-[hsl(var(--gradient-end))] flex items-center justify-center transition-all hover:scale-110 hover:-rotate-6 duration-300 border border-border/50"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5" />
@@ -73,7 +78,7 @@ const Footer = () => {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-secondary hover:bg-[hsl(var(--gradient-start))] flex items-center justify-center transition-all hover:scale-110"
+                className="w-12 h-12 rounded-full bg-secondary/50 hover:bg-gradient-to-r hover:from-[hsl(var(--gradient-start))] hover:to-[hsl(var(--gradient-end))] flex items-center justify-center transition-all hover:scale-110 hover:-rotate-6 duration-300 border border-border/50"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
@@ -84,8 +89,8 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border/50 text-center">
-          <p className="text-muted-foreground">
-            © {currentYear} <span className="text-foreground font-medium">Awaara</span>. All Rights Reserved.
+          <p className="text-muted-foreground text-lg">
+            © {currentYear} <span className="text-foreground font-bold gradient-text">Awaara</span>. All Rights Reserved.
           </p>
         </div>
       </div>
