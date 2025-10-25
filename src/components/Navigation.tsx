@@ -62,15 +62,6 @@ const Navigation = ({ onJoinClick }: NavigationProps) => {
           </button>
         </div>
 
-        <Button 
-          variant="hero" 
-          size={isScrolled ? "default" : "lg"}
-          onClick={onJoinClick}
-          className="transition-all duration-500 focus:ring-2 focus:ring-[hsl(var(--gradient-start))] focus:ring-offset-2"
-          aria-label="Join the Awaara waitlist"
-        >
-          Join Waitlist
-        </Button>
       </div>
     </nav>
   );

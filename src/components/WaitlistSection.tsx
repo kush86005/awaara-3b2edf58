@@ -1,5 +1,5 @@
 import WaitlistForm from "./WaitlistForm";
-import puneMap from "@/assets/pune-map.png";
+import puneMap from "@/assets/pune-map-user.png";
 
 const WaitlistSection = () => {
   return (
@@ -25,18 +25,18 @@ const WaitlistSection = () => {
           {/* Right: Map Visual */}
           <div className="flex items-center justify-center animate-slide-in-right">
             <div className="relative group">
-              <div className="relative">
+              <div className="relative overflow-hidden rounded-xl ring-1 ring-[hsl(var(--gradient-start))]/20 bg-secondary/20">
+                <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-[hsl(var(--gradient-start))]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img 
                   src={puneMap} 
-                  alt="Pune - Launch city" 
-                  className="w-full max-w-md drop-shadow-2xl group-hover:scale-105 transition-all duration-500 animate-float"
+                  alt="Pune — Launch city map" 
+                  className="w-full max-w-md aspect-[4/3] object-cover drop-shadow-2xl transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--gradient-start))]/20 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 {/* Tooltip */}
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                  <div className="bg-background/95 backdrop-blur-sm px-4 py-2 rounded-lg border border-[hsl(var(--gradient-start))]/30 shadow-xl">
-                    <p className="text-sm font-semibold gradient-text whitespace-nowrap">Pune — Launch city</p>
+                <div className="absolute bottom-3 left-1/2 -translate-x-1/2" role="tooltip" aria-label="Pune — Launch city">
+                  <div className="bg-background/95 backdrop-blur-sm px-3 py-1.5 rounded-md border border-[hsl(var(--gradient-start))]/30 shadow-xl">
+                    <p className="text-xs font-semibold gradient-text whitespace-nowrap">Pune — Launch city</p>
                   </div>
                 </div>
               </div>

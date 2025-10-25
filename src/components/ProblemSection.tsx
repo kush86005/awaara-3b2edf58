@@ -32,9 +32,9 @@ const ProblemSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <p ref={textRef} className="text-3xl md:text-5xl font-bold leading-relaxed tracking-tight mb-12">
-            Plans are left on read. Trips are full of{" "}
-            <span className="word-reveal text-muted-foreground inline-block">scams</span>. Your social life is{" "}
-            <span className="word-reveal text-muted-foreground inline-block">fragmented</span> across five different apps.
+            Plans die in DMs. Trips never happen. You’re missing the {" "}
+            <span className="word-reveal text-muted-foreground inline-block">best nights out</span>. {" "}
+            <span className="word-reveal text-muted-foreground inline-block">Awaara's here!</span>
           </p>
           <div className="h-1 w-32 mx-auto bg-gradient-to-r from-transparent via-[hsl(var(--gradient-start))] to-transparent rounded-full animate-pulse"></div>
         </div>

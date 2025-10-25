@@ -10,6 +10,7 @@ const SolutionSection = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("animate-fade-in-up");
+            (entry.target as HTMLElement).classList.remove("opacity-0");
           }
         });
       },
@@ -35,7 +36,7 @@ const SolutionSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Left: Phone Mockup */}
-          <div className="flex items-center justify-center animate-on-scroll opacity-0">
+          <div className="flex items-center justify-center animate-on-scroll">
             <div className="relative group">
               <img 
                 src={appMockup} 
@@ -47,7 +48,7 @@ const SolutionSection = () => {
           </div>
 
           {/* Right: Content */}
-          <div className="animate-on-scroll opacity-0 space-y-6">
+          <div className="animate-on-scroll space-y-6">
             <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               We fixed it. This is <span className="gradient-text animate-gradient">Awaara.</span>
             </h2>

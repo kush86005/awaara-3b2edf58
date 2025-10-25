@@ -29,9 +29,6 @@ const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
 
       {/* Content */}
       <div ref={textRef} className="relative z-10 container mx-auto px-6 text-center">
-        <div className="inline-block mb-6 px-6 py-2 bg-gradient-to-r from-[hsl(var(--gradient-start))] to-[hsl(var(--gradient-end))] rounded-full animate-scale-in">
-          <span className="text-sm font-bold text-background tracking-wider">COMING SOON</span>
-        </div>
         
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 animate-text-shimmer bg-clip-text text-transparent bg-gradient-to-r from-foreground via-foreground to-foreground bg-[length:200%_auto]">
           Your Social Life,
@@ -43,15 +40,6 @@ const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
           Discover curated nights & experiences — join the waitlist for early access.
         </p>
 
-        <Button
-          variant="hero"
-          size="xl"
-          onClick={onJoinClick}
-          className="hover:scale-105 transition-all duration-300 hover:shadow-2xl focus:ring-2 focus:ring-[hsl(var(--gradient-start))] focus:ring-offset-2"
-          aria-label="Join the Awaara waitlist for early access"
-        >
-          Join the Waitlist
-        </Button>
       </div>
     </section>
   );
