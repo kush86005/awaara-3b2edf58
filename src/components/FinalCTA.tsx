@@ -15,7 +15,7 @@ const FinalCTA = () => {
             Ready to Escape the <span className="gradient-text animate-gradient">Ordinary?</span>
           </h2>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 animate-fade-in-delayed">
-            Join <span className="text-foreground font-bold">thousands</span> waiting to experience the future of social discovery in <span className="text-foreground font-bold">Pune</span>.
+            Join <span className="text-foreground font-bold">thousands</span> waiting to experience the future of social discovery.
           </p>
           <div className="animate-scale-in">
             <WaitlistForm />

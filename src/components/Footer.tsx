@@ -12,11 +12,10 @@ const Footer = () => {
       
       <div className="container mx-auto px-6 py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 animate-fade-in-up">
-          {/* Column 1: Brand */}
           <div className="space-y-4">
             <h3 className="text-3xl font-bold gradient-text animate-gradient">Awaara</h3>
-            <p className="text-muted-foreground leading-relaxed text-lg">
-              Building the future of social experiences in <span className="text-foreground font-semibold">India</span>.
+            <p className="text-muted-foreground leading-relaxed">
+              Building the future of social experiences — curated, trusted, and designed for Gen Z.
             </p>
           </div>
 
@@ -89,8 +88,10 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border/50 text-center">
-          <p className="text-muted-foreground text-lg">
-            © {currentYear} <span className="text-foreground font-bold gradient-text">Awaara</span>. All Rights Reserved.
+          <p className="text-muted-foreground">
+            © {currentYear} <span className="text-foreground font-semibold">Awaara</span> — Made to Escape. All Rights Reserved. •{" "}
+            <a href="#privacy" className="hover:text-foreground transition-colors">Privacy</a> •{" "}
+            <a href="#terms" className="hover:text-foreground transition-colors">Terms</a>
           </p>
         </div>
       </div>

@@ -40,26 +40,18 @@ const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-12 animate-fade-in-delayed">
-          One app for curated nightlife, trusted trips, and real connections.
-          <br />
-          <span className="font-semibold text-foreground">Stop searching, start living.</span>
+          Discover curated nights & experiences — join the waitlist for early access.
         </p>
 
         <Button
           variant="hero"
           size="xl"
           onClick={onJoinClick}
-          className="animate-glow-pulse hover:scale-110 transition-transform duration-300"
+          className="hover:scale-105 transition-all duration-300 hover:shadow-2xl focus:ring-2 focus:ring-[hsl(var(--gradient-start))] focus:ring-offset-2"
+          aria-label="Join the Awaara waitlist for early access"
         >
           Join the Waitlist
         </Button>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
-        <div className="w-6 h-10 border-2 border-foreground/30 rounded-full flex items-start justify-center p-2">
-          <div className="w-1.5 h-3 bg-foreground/50 rounded-full"></div>
-        </div>
       </div>
     </section>
   );

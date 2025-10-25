@@ -12,8 +12,16 @@ const WaitlistForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!email || !email.includes("@")) {
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email || !emailRegex.test(email.trim())) {
       toast.error("Please enter a valid email address");
+      return;
+    }
+
+    // Validate email length
+    if (email.length > 255) {
+      toast.error("Email address is too long");
       return;
     }
 
@@ -23,7 +31,7 @@ const WaitlistForm = () => {
     setTimeout(() => {
       setIsSubmitted(true);
       setIsLoading(false);
-      toast.success("Successfully joined the waitlist!");
+      toast.success("Thanks! Check your email to confirm your spot on the Awaara waitlist.");
     }, 1000);
   };
 
@@ -48,17 +56,21 @@ const WaitlistForm = () => {
         placeholder="Enter your email address"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className="h-14 px-6 text-base bg-secondary/50 border-border/50 focus:border-[hsl(var(--gradient-start))] transition-all"
+        className="h-14 px-6 text-base bg-secondary/50 border-border/50 focus:border-[hsl(var(--gradient-start))] focus:ring-2 focus:ring-[hsl(var(--gradient-start))]/20 transition-all"
         disabled={isLoading}
+        required
+        aria-label="Email address"
+        maxLength={255}
       />
       <Button
         type="submit"
         variant="hero"
         size="xl"
-        className="w-full"
+        className="w-full focus:ring-2 focus:ring-[hsl(var(--gradient-start))] focus:ring-offset-2"
         disabled={isLoading}
+        aria-label="Join the waitlist"
       >
-        {isLoading ? "Joining..." : "Notify Me"}
+        {isLoading ? "Joining..." : "Join Waitlist"}
       </Button>
     </form>
   );
