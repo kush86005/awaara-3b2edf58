@@ -28,7 +28,7 @@ const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
       </div>
 
       {/* Content */}
-      <div ref={textRef} className="relative z-10 container mx-auto px-6 text-center">
+      <div ref={textRef} className="relative z-10 container mx-auto px-6 text-center pt-20">
         
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 animate-text-shimmer bg-clip-text text-transparent bg-gradient-to-r from-foreground via-foreground to-foreground bg-[length:200%_auto]">
           Your social life's been sleeping.

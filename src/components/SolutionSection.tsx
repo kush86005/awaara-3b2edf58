@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import appScreen from "@/assets/app-screen.jpg";
+import appMockup from "@/assets/app-mockup-pune.png";
 
 const SolutionSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -39,9 +39,9 @@ const SolutionSection = () => {
           <div className="flex items-center justify-center animate-on-scroll">
             <div className="relative group">
               <img 
-                src={appScreen} 
-                alt="Awaara App Interface" 
-                className="w-full max-w-sm rounded-3xl drop-shadow-2xl group-hover:scale-110 transition-all duration-700 relative z-10 animate-float"
+                src={appMockup} 
+                alt="Awaara App Interface showing Pune EDM Festival" 
+                className="w-full max-w-xs drop-shadow-2xl group-hover:scale-105 transition-all duration-700 relative z-10 animate-float"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--gradient-start))]/20 to-[hsl(var(--gradient-end))]/20 blur-3xl group-hover:blur-4xl transition-all duration-700 animate-pulse-slow"></div>
             </div>
