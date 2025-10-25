@@ -42,22 +42,22 @@ const Navigation = ({ onJoinClick }: NavigationProps) => {
         </button>
 
         {/* Centered Nav Items */}
-        <div className="hidden md:flex items-center gap-8 absolute left-1/2 transform -translate-x-1/2">
+        <div className="flex items-center gap-4 md:gap-8 absolute left-1/2 transform -translate-x-1/2">
           <button
             onClick={() => scrollToSection("hero")}
-            className="text-foreground/80 hover:text-foreground transition-colors font-medium"
+            className="text-foreground/80 hover:text-foreground transition-colors font-medium text-sm md:text-base"
           >
             Home
           </button>
           <button
             onClick={() => scrollToSection("features")}
-            className="text-foreground/80 hover:text-foreground transition-colors font-medium"
+            className="text-foreground/80 hover:text-foreground transition-colors font-medium text-sm md:text-base"
           >
             Features
           </button>
           <button
             onClick={() => scrollToSection("about")}
-            className="text-foreground/80 hover:text-foreground transition-colors font-medium"
+            className="text-foreground/80 hover:text-foreground transition-colors font-medium text-sm md:text-base"
           >
             About
           </button>
@@ -67,8 +67,8 @@ const Navigation = ({ onJoinClick }: NavigationProps) => {
         <Button 
           onClick={onJoinClick}
           variant="hero"
-          size="default"
-          className="hidden md:inline-flex"
+          size="sm"
+          className="md:size-default text-xs md:text-sm"
         >
           Join Waitlist
         </Button>
