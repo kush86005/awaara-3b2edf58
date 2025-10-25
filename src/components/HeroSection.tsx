@@ -31,13 +31,13 @@ const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
       <div ref={textRef} className="relative z-10 container mx-auto px-6 text-center">
         
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 animate-text-shimmer bg-clip-text text-transparent bg-gradient-to-r from-foreground via-foreground to-foreground bg-[length:200%_auto]">
-          Your Social Life,
+          Your social life's been sleeping.
           <br />
-          <span className="gradient-text animate-gradient">Reimagined.</span>
+          <span className="gradient-text animate-gradient">It's time to wake it up.</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-12 animate-fade-in-delayed">
-          Discover curated nights & experiences — join the waitlist for early access.
+          Discover the wildest nights, real experiences, and memories waiting to happen.
         </p>
 
       </div>

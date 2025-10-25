@@ -41,7 +41,8 @@ const Navigation = ({ onJoinClick }: NavigationProps) => {
           Awaara
         </button>
 
-        <div className="hidden md:flex items-center gap-8">
+        {/* Centered Nav Items */}
+        <div className="hidden md:flex items-center gap-8 absolute left-1/2 transform -translate-x-1/2">
           <button
             onClick={() => scrollToSection("hero")}
             className="text-foreground/80 hover:text-foreground transition-colors font-medium"
@@ -61,6 +62,16 @@ const Navigation = ({ onJoinClick }: NavigationProps) => {
             About
           </button>
         </div>
+
+        {/* Join Waitlist Button */}
+        <Button 
+          onClick={onJoinClick}
+          variant="hero"
+          size="default"
+          className="hidden md:inline-flex"
+        >
+          Join Waitlist
+        </Button>
 
       </div>
     </nav>
