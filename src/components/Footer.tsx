@@ -24,27 +24,27 @@ const Footer = () => {
             <h4 className="font-bold text-lg mb-6 text-foreground">Company</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#about" className="text-muted-foreground hover:text-[hsl(var(--gradient-start))] transition-colors hover:translate-x-1 inline-block transform duration-300">
+                <a href="/blogs" className="text-muted-foreground hover:text-[hsl(var(--gradient-start))] transition-colors hover:translate-x-1 inline-block transform duration-300">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-muted-foreground hover:text-[hsl(var(--gradient-start))] transition-colors hover:translate-x-1 inline-block transform duration-300">
+                <a href="mailto:awaara.life@outlook.com" className="text-muted-foreground hover:text-[hsl(var(--gradient-start))] transition-colors hover:translate-x-1 inline-block transform duration-300">
                   Contact
                 </a>
               </li>
               <li>
-                <a href="#careers" className="text-muted-foreground hover:text-[hsl(var(--gradient-start))] transition-colors hover:translate-x-1 inline-block transform duration-300">
+                <a href="/careers" className="text-muted-foreground hover:text-[hsl(var(--gradient-start))] transition-colors hover:translate-x-1 inline-block transform duration-300">
                   Careers
                 </a>
               </li>
               <li>
-                <a href="#privacy" className="text-muted-foreground hover:text-[hsl(var(--gradient-start))] transition-colors hover:translate-x-1 inline-block transform duration-300">
+                <a href="/privacy" className="text-muted-foreground hover:text-[hsl(var(--gradient-start))] transition-colors hover:translate-x-1 inline-block transform duration-300">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#terms" className="text-muted-foreground hover:text-[hsl(var(--gradient-start))] transition-colors hover:translate-x-1 inline-block transform duration-300">
+                <a href="/terms" className="text-muted-foreground hover:text-[hsl(var(--gradient-start))] transition-colors hover:translate-x-1 inline-block transform duration-300">
                   Terms of Service
                 </a>
               </li>
@@ -90,8 +90,8 @@ const Footer = () => {
         <div className="pt-8 border-t border-border/50 text-center">
           <p className="text-muted-foreground">
             © {currentYear} <span className="text-foreground font-semibold">Awaara</span> — Made to Escape. All Rights Reserved. •{" "}
-            <a href="#privacy" className="hover:text-foreground transition-colors">Privacy</a> •{" "}
-            <a href="#terms" className="hover:text-foreground transition-colors">Terms</a>
+            <a href="/privacy" className="hover:text-foreground transition-colors">Privacy</a> •{" "}
+            <a href="/terms" className="hover:text-foreground transition-colors">Terms</a>
           </p>
         </div>
       </div>

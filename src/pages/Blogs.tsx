@@ -106,14 +106,10 @@ Your city is alive — you just haven't seen it through Awaara yet.`,
                 <div className="prose prose-lg max-w-none text-foreground/90 whitespace-pre-line mb-6">
                   {blog.content}
                 </div>
-                <div className="flex flex-wrap gap-2 mt-8 pt-6 border-t border-border/50">
+                {/* SEO tags hidden but present for search engines */}
+                <div className="sr-only">
                   {blog.tags.split(", ").map((tag, tagIndex) => (
-                    <span
-                      key={tagIndex}
-                      className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm"
-                    >
-                      {tag}
-                    </span>
+                    <span key={tagIndex}>{tag}</span>
                   ))}
                 </div>
               </article>
