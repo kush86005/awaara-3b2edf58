@@ -13,8 +13,8 @@ const Careers = () => {
       <section className="pt-32 pb-20 px-4 md:px-6">
         <div className="container mx-auto max-w-4xl">
           <article className="glass-effect rounded-2xl p-8 md:p-12 animate-fade-in text-center">
-            <h1 className="text-3xl md:text-5xl font-bold gradient-text mb-8">
-              Work With Awaara — But Not Just Yet 😉
+            <h1 className="text-3xl md:text-5xl font-bold mb-8">
+              <span className="gradient-text">Work With Awaara — But Not Just Yet</span> <span className="text-4xl">😉</span>
             </h1>
             
             <div className="prose prose-lg max-w-none text-foreground/90 space-y-6 mx-auto">
@@ -44,8 +44,8 @@ const Careers = () => {
                 </p>
               </div>
 
-              <p className="text-xl font-bold gradient-text">
-                The revolution's just getting started — stay Awaara. 🌍✨
+              <p className="text-xl font-bold">
+                <span className="gradient-text">The revolution's just getting started — stay Awaara.</span> <span className="text-2xl">🌍✨</span>
               </p>
             </div>
           </article>
